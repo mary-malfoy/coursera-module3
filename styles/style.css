@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
 body {
-    background-color: brown;
+    background-color: rgb(218, 213, 213);
 }
 #header_nav {
-    background-color: yellow;
+    background-color: gray;
     border-radius: 0;
     border: 0;
 }
-a> .pull-left {
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
     font-family: 'Noto Sans TC', sans-serif;
-    margin-left: 20px;
+    color: black;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
 }
