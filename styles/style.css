@@ -3,4 +3,6 @@ body {
 }
 #header_nav {
     background-color: yellow;
+    border-radius: 0;
+    border: 0;
 }
