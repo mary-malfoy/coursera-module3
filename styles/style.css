@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
 body {
     background-color: brown;
 }
@@ -5,4 +6,5 @@ body {
     background-color: yellow;
     border-radius: 0;
     border: 0;
+    font-family: 'Noto Sans TC', sans-serif;
 }
