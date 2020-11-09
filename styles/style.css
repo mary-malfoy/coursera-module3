@@ -30,7 +30,7 @@ header {
     height: 100%;
     background-color: gray;
 }
-header_body {
+.header_body {
     position: relative;
     z-index: 2;
     display: flex;
@@ -42,14 +42,14 @@ header_body {
     margin: 10px;
     padding: 5px;
 }
-header_list {
+.header_list {
     display: flex;
 }
-header_list>li {
+.header_list>li {
     list-style: none;
     margin: 0px 0px 0px 20px;
 }
-header_link {
+.header_link {
     color: lightgray;
     font-size: 18px;
 }
