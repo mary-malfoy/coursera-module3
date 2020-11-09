@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap');
-*, *::before ,*::after {
+*, *:before ,*:after {
     padding: 0;
     margin: 0;
     border: 0;
@@ -45,6 +45,7 @@ html, body {
     position: relative;
     z-index: 3;
     overflow: hidden;
+
 }
 .container {
     margin: 0px auto;
@@ -113,7 +114,7 @@ html, body {
         height: 20px;
         z-index: 3;
     }
-    .header_burger>span{
+    .header_burger span{
         content: "";
         background-color: white;
         position: absolute;
@@ -121,7 +122,8 @@ html, body {
         height: 2px;
         left: 0;
         top: 9px;
-    };
+        transition: all 0.3s ease 0s;
+    }
     .header_burger:before, .header_burger:after{
         content: '';
         background-color: white;
@@ -129,25 +131,46 @@ html, body {
         width: 100%;
         height: 2px;
         left: 0;
+        transition: all 0.3s ease 0s;
     }
     .header_burger:before{
-        padding-top: 0;
+        top: 0;
     }
     .header_burger:after{
-        padding-bottom: 0;
+        bottom: 0;
     }
+    .header_burger.active span{
+        transform: scale(0);
+    }
+    .header_burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header_burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    
     .header_menu {
         position: fixed;
-        top: 0;
+        top: -100%;
         left: 0;
         width: 100%;
         height: 30px;
         background-color: white;
-        padding: 60px 0px 0px 0px;    
+        padding: 60px 0px 0px 0px;  
+        transition: all 0.3s ease 0s;  
+    }
+    .header_menu.active{
+        top: 0;
+    }
+    .content {
+        position: relative;
     }
     .content_text {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 10px;
         margin-bottom: 10px;
     }
     .header_list{
